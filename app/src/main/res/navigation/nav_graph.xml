@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cowsFragment">
+
+    <fragment
+        android:id="@+id/cowsFragment"
+        android:name="com.elshaddai.cattletracker.ui.cow_tracking.CowsFragment"
+        android:label="fragment_cows"
+        tools:layout="@layout/fragment_cows" >
+        <action
+            android:id="@+id/action_cowsFragment_to_enterCowDetailsFragment"
+            app:destination="@id/enterCowDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.elshaddai.cattletracker.ExpensesFragment"
+        android:label="fragment_expenses"
+        tools:layout="@layout/fragment_expenses" />
+    <fragment
+        android:id="@+id/milkFragment"
+        android:name="com.elshaddai.cattletracker.MilkFragment"
+        android:label="fragment_milk"
+        tools:layout="@layout/fragment_milk" />
+    <fragment
+        android:id="@+id/vaccinationFragment"
+        android:name="com.elshaddai.cattletracker.VaccinationFragment"
+        android:label="fragment_vaccination"
+        tools:layout="@layout/fragment_vaccination" />
+    <fragment
+        android:id="@+id/enterCowDetailsFragment"
+        android:name="com.elshaddai.cattletracker.ui.add_cow.EnterCowDetailsFragment"
+        android:label="fragment_enter_cow_details"
+        tools:layout="@layout/fragment_enter_cow_details" />
+</navigation>

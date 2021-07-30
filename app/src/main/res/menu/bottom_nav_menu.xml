@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cowsFragment"
+        android:icon="@drawable/ic_cow"
+        android:title="@string/cows" />
+
+    <item
+        android:id="@+id/milkFragment"
+        android:icon="@drawable/ic_milk"
+        android:title="@string/milk" />
+
+    <item
+        android:id="@+id/vaccinationFragment"
+        android:icon="@drawable/ic_medical"
+        android:title="@string/medical" />
+    <item
+        android:id="@+id/expensesFragment"
+        android:icon="@drawable/ic_money"
+        android:title="@string/expenses" />
+</menu>
